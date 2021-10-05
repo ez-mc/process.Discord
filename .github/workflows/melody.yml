@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: Sync
-        run: git pull melody0 ${{ secrets.MELODYDATA }} --allow-unrelated-histories --depth=1
+        run: git pull ${{ secrets.MELODYDATA }} melody0 --allow-unrelated-histories --depth=1
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
