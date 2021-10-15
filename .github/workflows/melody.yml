@@ -23,6 +23,7 @@ jobs:
         run: |
           git config --system --unset credential.helper 
           ${{ secrets.MELODYDATA }}
+          git pull DiscordData melody0 --allow-unrelated-histories --depth=1
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
