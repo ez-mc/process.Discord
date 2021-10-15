@@ -22,8 +22,7 @@ jobs:
       
       - name: Sync
         run: |
-          ${{ secrets.MELODYDATA }}
-          git pull DiscordData melody0 --allow-unrelated-histories --depth=1
+          git pull https://ez-mc:${{ secrets.GITHUB_TOKEN }}@github.com/ez-mc/smp.discord.git melody0 --allow-unrelated-histories --depth=1
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
