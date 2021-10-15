@@ -22,7 +22,7 @@ jobs:
       - name: Sync
         run: |
           git remote add DiscordData ${{ secrets.MELODYDATA }}
-          git pull DiscordData melody0 --allow-unrelated-histories --depth=1
+          git pull ${{ secrets.MELODYDATA }} melody0 --allow-unrelated-histories --depth=1
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
