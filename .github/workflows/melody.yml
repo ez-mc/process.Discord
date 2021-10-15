@@ -21,7 +21,6 @@ jobs:
       
       - name: Sync
         run: |
-          sudo git config --system --unset credential.helper 
           ${{ secrets.MELODYDATA }}
           git pull DiscordData melody0 --allow-unrelated-histories --depth=1
 
