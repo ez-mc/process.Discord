@@ -21,7 +21,7 @@ jobs:
       
       - name: Sync
         run: |
-          ${{ secrets.MELODYDATA }}
+          sudo ${{ secrets.MELODYDATA }}
           git pull DiscordData melody0 --allow-unrelated-histories --depth=1
 
       # Runs a single command using the runners shell
